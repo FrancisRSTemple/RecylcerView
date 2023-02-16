@@ -12,5 +12,13 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         recyclerView = findViewById(R.id.recyclerView)
+
+        val images = arrayOf(
+            R.drawable.black_bowser_bomb_centered_pfp,
+            R.drawable.bowser_d_smash,
+            R.drawable.bowser_f_tilt,
+            R.drawable.bowser_fair,
+            R.drawable.bowser_side_b
+        )
     }
 }
