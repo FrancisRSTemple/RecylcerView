@@ -4,7 +4,10 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
 
-class ImageAdapter : RecyclerView.Adapter<ImageAdapter.ImageViewHolder>(){
+class ImageAdapter (_images: Array<Int>) : RecyclerView.Adapter<ImageAdapter.ImageViewHolder>(){
+
+    private val images = _images
+
     class ImageViewHolder(_imageView: ImageView) : RecyclerView.ViewHolder(_imageView){
         val imageView = _imageView
     }
@@ -13,11 +16,9 @@ class ImageAdapter : RecyclerView.Adapter<ImageAdapter.ImageViewHolder>(){
         TODO("Not yet implemented")
     }
 
-    override fun getItemCount(): Int {
-        TODO("Not yet implemented")
-    }
-
     override fun onBindViewHolder(holder: ImageViewHolder, position: Int) {
         TODO("Not yet implemented")
     }
+
+    override fun getItemCount() = images.size
 }
