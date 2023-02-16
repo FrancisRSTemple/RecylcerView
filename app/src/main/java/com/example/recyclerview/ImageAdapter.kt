@@ -22,7 +22,7 @@ class ImageAdapter (_images: Array<Int>) : RecyclerView.Adapter<ImageAdapter.Ima
             ImageView(
                 parent.context
             ).apply {
-                layoutParams = ViewGroup.LayoutParams(300,300)
+                layoutParams = ViewGroup.LayoutParams(1000,1000)
             }
         )
     }

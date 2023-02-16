@@ -2,6 +2,7 @@ package com.example.recyclerview
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
 class MainActivity : AppCompatActivity() {
@@ -20,5 +21,9 @@ class MainActivity : AppCompatActivity() {
             R.drawable.bowser_fair,
             R.drawable.bowser_side_b
         )
+
+        recyclerView.adapter = ImageAdapter(images)
+
+        recyclerView.layoutManager = LinearLayoutManager(this)
     }
 }
