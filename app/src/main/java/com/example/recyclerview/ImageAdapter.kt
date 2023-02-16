@@ -13,7 +13,18 @@ class ImageAdapter (_images: Array<Int>) : RecyclerView.Adapter<ImageAdapter.Ima
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ImageViewHolder {
-        TODO("Not yet implemented")
+        /*
+        this returns an ImageViewHolder object without assigning to variable first
+
+
+         */
+        return ImageViewHolder(
+            ImageView(
+                parent.context
+            ).apply {
+                layoutParams = ViewGroup.LayoutParams(300,300)
+            }
+        )
     }
 
     override fun onBindViewHolder(holder: ImageViewHolder, position: Int) {
