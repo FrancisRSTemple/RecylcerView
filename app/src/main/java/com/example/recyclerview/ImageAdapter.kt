@@ -28,7 +28,7 @@ class ImageAdapter (_images: Array<Int>) : RecyclerView.Adapter<ImageAdapter.Ima
     }
 
     override fun onBindViewHolder(holder: ImageViewHolder, position: Int) {
-        TODO("Not yet implemented")
+        holder.imageView.setImageResource(images[position])
     }
 
     override fun getItemCount() = images.size
