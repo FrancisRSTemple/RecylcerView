@@ -15,11 +15,11 @@ class MainActivity : AppCompatActivity() {
         recyclerView = findViewById(R.id.recyclerView)
 
         val images = arrayOf(
-            R.drawable.black_bowser_bomb_centered_pfp,
-            R.drawable.bowser_d_smash,
-            R.drawable.bowser_f_tilt,
-            R.drawable.bowser_fair,
-            R.drawable.bowser_side_b
+            ImageItem(R.drawable.black_bowser_bomb_centered_pfp, "BowserBomb"),
+            ImageItem(R.drawable.bowser_d_smash, "Bowser Down Smash"),
+            ImageItem(R.drawable.bowser_f_tilt, "Bowser F Tilt"),
+            ImageItem(R.drawable.bowser_fair, "Bowser FAir"),
+            ImageItem(R.drawable.bowser_side_b, "Bowser Side B")
         )
 
         recyclerView.adapter = ImageAdapter(images)
